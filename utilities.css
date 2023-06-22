@@ -1,0 +1,157 @@
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* @@@@@@@@@@@@@@ Elements Styling @@@@@@@@@@ */
+
+
+h1{
+    font-size: 3rem;
+    line-height: 1.2em;
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-size: 2rem;
+    line-height: 1.6em;
+    color: #333333;
+    margin: 2rem 0;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.6em;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.5em;
+}
+
+li{
+    font-size: 1.6rem;
+    list-style-type: none;
+    line-height: 1.5em;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    line-height: 1.5em;
+}
+
+/* @@@@@@@@@@@@@@@@@@@ Utility Classes @@@@@@@@@@@ */
+
+.container{
+    width: 1000px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.bg-white{
+    background-color: #fff;
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 20px #aaa;
+    margin-bottom: 2rem;
+}
+
+.bg-dark{
+    background-color: #f4f4f4;
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 10px #aaa;
+    margin-bottom: 2rem;
+    height: 450px;
+}
+
+.image-wrapper{
+    display: block;
+    background-color: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 20px #aaa;
+    margin-bottom: 2rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.image-wrapper:hover{
+    transform: scale(1.1);
+}
+
+
+.sub-title{
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.main-title{
+    font-size: 5.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    margin: 2rem 0;
+    border-radius: 0.7rem;
+    font-size: 1.8rem;
+    color: #ffffff;
+    background-color: #047aed;
+    box-shadow: 0px 5px 5px #aaa;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #000000b0;
+}
+
+.btn-primary{
+    border: 1px solid #fff;
+    box-shadow: none;
+}
+
+.btn-secondary{
+    padding: 0.5em 1em;
+    border: none;
+}
+
+.btn-3{
+    background-color:#002240;
+    box-shadow:none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-3:hover{
+    background-color: #000000;
+}
+
+.text-light{
+    color: #ffffff;
+}
+
+.text-dark{
+    color: #333;
+}
+
+
+

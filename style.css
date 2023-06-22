@@ -1,0 +1,904 @@
+
+/* @@@@@@@@@@@@@@@@@@@ Header Styling @@@@@@@@@@@@@@@@ */
+
+.header{
+    height: 65vh;
+    width: 100vw;
+    background:#047aed;
+    color: #fff;
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.menu-items{
+    display: flex;
+}
+
+.menu-items li a{
+    margin-left: 4rem;
+    color: #fff;
+}
+
+.logo{
+    margin-right: 20rem;
+    font-weight: normal;
+}
+
+.menu-items a:hover{
+    padding-bottom: 0.4rem;
+    border-bottom: 0.2rem solid #fff;
+}
+
+.showcase{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+
+}
+
+.showcase-content{
+    width: 40%;
+    animation: slide-content 1s forwards 0.1s ease-in-out;   
+}
+
+@keyframes slide-content{
+    0%{
+        transform:translate(-110%);
+    }
+
+    100%{
+        transform:translate(0%);
+
+    }
+}
+
+.form-wrapper{
+    animation: slide-form 1s forwards 0.1s ease-in-out;
+}
+
+@keyframes slide-form{
+    0%{
+        transform: translate(110%);
+    }
+
+    100%{
+        transform: translate(0%);
+    }
+}
+.form-wrapper h2{
+    color: #555;
+    margin-bottom: 2rem;
+
+}
+
+form input{
+    display: block;
+    margin-bottom: 3rem;
+    border: none;
+    outline: none;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.3px solid #555;
+    font-size: 1.8rem;
+}
+
+form :not(.btn){
+
+    width: 300px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@ Main Styling @@@@@@@@@@@@@@@@@@@ */
+
+.main{
+    margin: 12rem 0 3rem 0;
+    animation: slide-main 1.1s forwards 0.1s ease-in;
+}
+
+@keyframes slide-main{
+    0%{
+        transform: translateY(200%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.stats-content{
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.stats-figures{
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.stats-figures > * {
+    color: #047aed;
+}
+
+/* @@@@@@@@@@@@@@@@@@ Workflow @@@@@@@@@@@@@@@ */
+
+.workflow{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.workflow-image img{
+    display: block;
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.workflow-items{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@ Cloud Section Styling @@@@@@@@@@@@@@@@@ */
+
+.cloud{
+    margin: 7rem 0;
+    background-color: #047aed;
+    color: #fff;
+    display: flex;
+}
+
+.cloud-container{
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.cloud-content{
+    width: 60%;
+    color: #fff;
+}
+.cloud-content h2{
+    color: #fff;
+    font-weight: normal;
+    font-size: 2.2rem;
+}
+
+.cloud-image{
+    width:40%;
+}
+.cloud-image img{
+    display: inline-block;
+    height: 300px;
+    object-position: center;
+    object-fit: cover;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@ Languages Styling @@@@@@@@@@@@@@@@@@@@ */
+
+.languages{
+    margin: 2rem 0;
+}
+
+.languages .languages-title{
+    font-size: 3.5rem;
+    font-weight: normal;
+    color:#222;
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.language-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.lang-name{
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* @@@@@@@@@@@@@@@@@ Footer Ssection Styling @@@@@@@@@@@@@@ */
+
+
+.footer{
+    padding: 5rem 0;
+    background-color: #002240;
+    color: #fff;
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    text-align: start;
+}
+
+.footer h1{
+    font-size: 3.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.footer li a{
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.footer li a:hover{
+    padding-bottom: 0.2rem;
+    border-bottom: 0.2rem solid #fff;
+}
+
+.footer h2{
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer i{
+    /* color: #e63946; */
+    color: #047aed;
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+
+
+/* ####################################################################
+
+@@@@@@@@@@@@@@@@@@@@@@ Features Page Styling @@@@@@@@@@@@@@@@@@@@@@@
+
+#################################################################### */
+.feature-header{
+    height: 50vh;
+    width: 100vw;
+    background: #047aed;
+    color: #fff;
+}
+
+.header-image img{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+
+.features-showcase{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 4rem;
+
+}
+
+.header-image{
+    animation: slide-form 1s forwards 0.1s ease-in-out;
+
+}
+
+.header-content{
+    width: 40%;
+    animation: slide-content 1s forwards 0.1s ease-in-out;   
+
+}
+
+.header-content h2{
+    color: #fff;   
+}
+.header-content h1{
+    font-size: 6rem;
+}
+
+
+/* ################## Loruki About Styling ################ */
+
+.about{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #f4f4f4;
+
+}
+
+.about-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: slide-main 1s forwards 0.1s ease-in;
+}
+
+.about-wrapper .about-image{
+    width: 30%;
+}
+.about-wrapper .about-content{
+    width: 40%;
+}
+
+.about-wrapper .about-content h1{
+    color: #333;
+    margin-bottom: 8rem;
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+
+.about-image img{
+    display: inline-block;
+    height:300px;
+    width: 300px;
+}
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ Features Section Styling @@@@@@@@@@@@@@@@@ */
+
+.features{
+    padding-top: 7rem;
+}
+
+.features-wrapper{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.features-wrapper :nth-child(n) { flex-grow: 1;}
+
+.features-wrapper :nth-child(1) { width: 100%;}
+.features-wrapper :nth-child(2) { width: 65%;}
+.features-wrapper :nth-child(3) { width: 33%;}
+.features-wrapper :nth-child(4) { width: 32%;}
+.features-wrapper :nth-child(5) { width: 32%;}
+.features-wrapper :nth-child(6) { width: 32%;}
+
+
+/* ############################################################### */
+/* @@@@@@@@@@@@@@@@@@@@@@@@ Docs Page Styling @@@@@@@@@@@@@@@@@@@@@ */
+/* ################################################################# */
+
+.docs{
+    padding-top: 7rem;
+}
+.docs-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-table{
+    width: 28%;
+    padding-bottom: 10rem;
+}
+.docs-content{
+    width: 68%;
+}
+.content-table ul li a{
+    display: block;
+    font-size: 1.6rem;
+    color: #222;
+    list-style-type: none;
+    line-height: 1.5em; 
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #aaa;
+}
+
+.content-table ul li a:hover{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.content-table ul .intro{
+    color: #047aed;
+}
+
+
+.docs-content h1{
+    font-size: 3rem;
+    font-weight: normal;
+    color: #333;
+} 
+
+.important{
+    background: #5cb85c;
+    color: #fff;
+    padding: 0.7em;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.brew,
+.npm,
+.yarn{
+    background-color: #333333;
+    color: #fff;
+    padding:0.7em ;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ######## Media Queries ######## */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+@media (min-width:270px) and (max-width:575px) {
+    :root{
+        font-size: 55%;
+    }
+
+
+    /* ############# Home Page ########### */
+
+    .header{
+        height: 100vh;
+    }
+
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .menu-items{
+        background-color: #00224049;
+        padding-right: 3rem;
+        padding-top: 01rem;
+        padding-bottom: 01rem;
+        margin-top: 1rem;
+    }
+    .logo{
+        margin: auto;
+    }
+
+    .showcase{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+
+    .showcase-content{
+        width: 90%;
+        margin-bottom: 5rem;
+        animation: slide-content 1s forwards 0.1s ease-in;   
+    }
+
+    
+@keyframes slide-content{
+    0%{
+        transform:translatey(-150%);
+    }
+
+    100%{
+        transform:translatey(0%);
+
+    }
+}
+
+    .form-wrapper{
+        width: 75%;
+        animation: slide-form 1s forwards 0.1s ease-in;
+    } 
+
+    @keyframes slide-form{
+        0%{
+            transform: translatey(150%);
+        }
+    
+        100%{
+            transform: translate(0%);
+        }
+    }
+
+    form :not(.btn){
+
+        width: 90%;
+    }
+    
+    .main{
+        margin: 10rem 0 5rem 0;
+    }
+    
+    .stats-content{
+        width: 90%;
+        /* margin: 0 auto; */
+    }
+
+    .stats-figures{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .workflow{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .workflow-image{
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .workflow-image img{
+        height: 180px;
+        width: 85%;
+    }
+
+    .workflow-items{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        width: 100%;
+    }
+
+    .bg-white{
+        background-color: #fff;
+        padding: 1.5rem 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0px 10px 20px #aaa;
+        margin-bottom: 2rem;
+    }
+
+    .cloud-container{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+
+    }
+
+    .cloud-content{
+        width: 85%;
+    }
+
+    .cloud-image{
+        width: 100%;
+    }
+    .cloud-image img{
+        width: 75%;
+        height: 220px;
+    }
+
+    .footer{
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    /* ########## Features Page ########## */
+
+    .feature-header{
+        height: 160vmin;
+    }
+
+    .features-showcase{
+        flex-direction: column;
+        width: 85%;
+        margin: 3rem auto;
+    }
+
+    .header-content{
+        width: 85%;
+        text-align: center;
+    }
+
+   
+    .about-wrapper{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .about-wrapper .about-image{
+        width: 98%;
+        text-align: center;
+        align-self: center;
+    }
+
+    .about-image img{
+    display: inline-block;
+    height:260px;
+    width: 85%;
+
+    }
+
+    .about-wrapper .about-content{
+        width: 90%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .about-wrapper .about-content h1{
+       margin-bottom: 2rem;
+    }
+
+    .features-wrapper{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .features-wrapper :nth-child(n){
+        width: 80%;
+    }
+
+
+    /* ############### Docs Page Styling ########## */
+
+    .docs-container{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .docs-container > *{
+        width: 100%;
+        }
+
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media (min-width:576px) and (max-width:767px) {
+
+
+    /* ############# Home Page ########### */
+
+    .header{
+        height: 60vh;
+        width: 100vw;
+    }
+
+
+    .showcase{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+
+    .showcase-content{
+        width: 90%;
+        margin-bottom: 5rem;
+        animation: slide-content 1s forwards 0.1s ease-in;   
+    }
+
+    
+@keyframes slide-content{
+    0%{
+        transform:translatey(-150%);
+    }
+
+    100%{
+        transform:translatey(0%);
+
+    }
+}
+
+    .form-wrapper{
+        width: 60%;
+        animation: slide-form 1s forwards 0.1s ease-in;
+        height: 400px;
+    } 
+
+    @keyframes slide-form{
+        0%{
+            transform: translatey(150%);
+        }
+    
+        100%{
+            transform: translate(0%);
+        }
+    }
+    form :not(.btn){
+
+        width: 90%;
+    }
+    
+    .main{
+        margin: 20rem 0 5rem 0;
+    }
+    
+    .stats-content{
+        width: 90%;
+        /* margin: 0 auto; */
+    }
+
+    .stats-figures{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .workflow{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .workflow-image{
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .workflow-image img{
+        height: 180px;
+        width: 85%;
+    }
+
+    .workflow-items{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        width: 100%;
+    }
+
+    .workflow-items .item{
+        width:85%;
+
+    }
+
+    .bg-white{
+        background-color: #fff;
+        padding: 1.5rem 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0px 10px 20px #aaa;
+        margin-bottom: 2rem;
+    }
+
+    .cloud-container{
+        flex-direction: column;
+        padding: 5rem 0;
+        align-items: center;
+
+    }
+
+    .cloud-content{
+        width: 85%;
+    }
+
+    .cloud-image{
+        width: 100%;
+    }
+    .cloud-image img{
+        width: 80%;
+        height: 300px;
+    }
+
+    .footer{
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+     /* ########## Features Page ########## */
+
+     .feature-header{
+        height: 50vh;
+    }
+
+    .features-showcase{
+        flex-direction: column;
+        width: 85%;
+        margin: 3rem auto;
+    }
+
+    .header-content{
+        width: 85%;
+        text-align: center;
+    }
+
+   
+    .about-wrapper{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .about-wrapper .about-image{
+        width: 98%;
+        text-align: center;
+        align-self: center;
+    }
+
+    .about-image img{
+    display: inline-block;
+    height:400px;
+    width: 75%;
+    /* object-fit: cover;
+    object-position: center; */
+
+    }
+
+    .about-wrapper .about-content{
+        width: 90%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .about-wrapper .about-content h1{
+       margin-bottom: 2rem;
+    }
+
+    .features-wrapper{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .features-wrapper :nth-child(n){
+        width: 80%;
+    }
+
+     /* ############### Docs Page Styling ########## */
+
+     .docs-container{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .docs-container > *{
+        width: 100%;
+        }
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+    .header{
+        height: 40vh;
+    }
+    .cloud-container{
+        padding: 2rem;
+        justify-content: space-around;
+    }
+
+    .cloud-image img{
+        display: inline-block;
+        height: 200px;
+        object-position: center;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .docs-container .content-table{
+        width: 28%;
+        height: 580px;
+    }
+
+    .feature-header{
+        height: 30vh;
+    }
+}
+
+
